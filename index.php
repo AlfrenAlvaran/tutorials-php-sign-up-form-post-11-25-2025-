@@ -15,12 +15,6 @@
 
         <h2>Create Account</h2>
 
-        <?php if (!empty($message)) : ?>
-            <div class="message <?php echo $success ? "success" : "error"; ?>">
-                <?php echo $message; ?>
-            </div>
-        <?php endif; ?>
-
         <form method="POST">
 
             <div class="input-group">
