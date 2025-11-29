@@ -8,14 +8,10 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="card">
+    <div  class="card">
 
         <h2>Create Account</h2>
-        <form method="POST">
-            <div class="input-group">
-                <input type="text" name="fullname" placeholder="Full Name" required>
-            </div>
-
+        <form action="" method="POST">
             <div class="input-group">
                 <input type="email" name="email" placeholder="Email Address" required>
             </div>
