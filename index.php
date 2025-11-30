@@ -1,17 +1,27 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
 
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div class="card">
 
         <h2>Create Account</h2>
 
+        <?php if (isset($_SESSION['message'])): ?>
+            <div class="message <?= $_SESSION['type'] ?>">
+                <?= $_SESSION['message'] ?>
+            </div>
+        <?php endif; ?>
+        
         <form action="./api/register.process.php" method="POST">
             <div class="input-group">
                 <input type="text" name="fullname" placeholder="Full Name" required>
@@ -29,4 +39,5 @@
 
     </div>
 </body>
+
 </html>
