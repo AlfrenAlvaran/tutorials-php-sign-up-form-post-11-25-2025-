@@ -11,7 +11,8 @@
     <div class="card">
 
         <h2>Create Account</h2>
-        <form method="POST">
+
+        <form action="./api/register.process.php" method="POST">
             <div class="input-group">
                 <input type="text" name="fullname" placeholder="Full Name" required>
             </div>
@@ -24,6 +25,8 @@
             </div>
             <button type="submit">Sign Up</button>
         </form>
+
+
     </div>
 </body>
 </html>
